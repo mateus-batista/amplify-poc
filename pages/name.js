@@ -18,7 +18,7 @@ export default function Home({ data }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(`${process.env.DOMAIN_URL}/api/hello`)
+  const res = await fetch(`https://main.d28o2wf7sgqtwu.amplifyapp.com/api/hello`)
   const data = await res.json()
 
   return { props: { data } }
